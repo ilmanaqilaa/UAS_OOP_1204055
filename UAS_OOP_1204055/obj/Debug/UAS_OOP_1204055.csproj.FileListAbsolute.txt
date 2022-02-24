@@ -16,3 +16,6 @@ C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_
 C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_OOP_1204055\UAS_OOP_1204055\obj\Debug\UAS_OOP_1204055.Tampil_Mahasiswa.resources
 C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_OOP_1204055\UAS_OOP_1204055\obj\Debug\UAS_OOP_1204055.Update_Prodi.resources
 C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_OOP_1204055\UAS_OOP_1204055\obj\Debug\UAS_OOP_1204055.Ubah_Data_Mahasiswa.resources
+C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_OOP_1204055\UAS_OOP_1204055\obj\Debug\UAS_OOP_1204055.View_Daftar_Ulang.resources
+C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_OOP_1204055\UAS_OOP_1204055\obj\Debug\UAS_OOP_1204055.Update_Daftar_Ulang.resources
+C:\Users\HP\Documents\Ilman\2021\TUGAS KAMPUS\Semester 3\Pemrograman II\UAS\UAS_OOP_1204055\UAS_OOP_1204055\obj\Debug\UAS_OOP_1204055.Laporan_Daftar_Ulang.resources

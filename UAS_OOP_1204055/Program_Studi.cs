@@ -85,13 +85,34 @@ namespace UAS_OOP_1204055
 
         private void btSubmit_Click(object sender, EventArgs e)
         {
-            string myCmd = "INSERT INTO ms_prodi VALUES('"
-            + tbKodeProdi.Text + "','"
-            + tbNamaProdi.Text + "','"
-            + tbSingkatan.Text + "','"
-            + tbBiayaKuliah.Text + "')";
+            if (tbNamaProdi.Text != "")
+            {
+                if (tbSingkatan.Text != "")
+                {
+                    if (tbBiayaKuliah.Text != "")
+                    {
+                        string myCmd = "INSERT INTO ms_prodi VALUES('"
+                        + tbKodeProdi.Text + "','"
+                        + tbNamaProdi.Text + "','"
+                        + tbSingkatan.Text + "','"
+                        + tbBiayaKuliah.Text + "')";
 
-            UpdateDB(myCmd);
+                        UpdateDB(myCmd);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Biaya Kuliah wajib diisi!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Singkatan Prodi wajib diisi!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nama Prodi wajib diisi!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void clear()
@@ -105,6 +126,22 @@ namespace UAS_OOP_1204055
         private void btClear_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void tbBiayaKuliah_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back;
+        }
+
+        private void tbNamaProdi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back;
+        }
+
+        private void tbSingkatan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back;
+
         }
     }
 }

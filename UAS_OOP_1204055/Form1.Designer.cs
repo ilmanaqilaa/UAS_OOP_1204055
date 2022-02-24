@@ -36,10 +36,13 @@
             this.msProdiView = new System.Windows.Forms.ToolStripMenuItem();
             this.msMahasiswa = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msUpdateProdi = new System.Windows.Forms.ToolStripMenuItem();
             this.msUpdateMahasiswa = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaksiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msDaftarUlangMahasiswa = new System.Windows.Forms.ToolStripMenuItem();
+            this.msViewDaftarUlang = new System.Windows.Forms.ToolStripMenuItem();
+            this.msUDU = new System.Windows.Forms.ToolStripMenuItem();
+            this.msLDU = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,7 +86,8 @@
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msProdiView,
-            this.msMahasiswa});
+            this.msMahasiswa,
+            this.msViewDaftarUlang});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
@@ -91,14 +95,14 @@
             // msProdiView
             // 
             this.msProdiView.Name = "msProdiView";
-            this.msProdiView.Size = new System.Drawing.Size(132, 22);
+            this.msProdiView.Size = new System.Drawing.Size(180, 22);
             this.msProdiView.Text = "Prodi";
             this.msProdiView.Click += new System.EventHandler(this.msProdiView_Click);
             // 
             // msMahasiswa
             // 
             this.msMahasiswa.Name = "msMahasiswa";
-            this.msMahasiswa.Size = new System.Drawing.Size(132, 22);
+            this.msMahasiswa.Size = new System.Drawing.Size(180, 22);
             this.msMahasiswa.Text = "Mahasiswa";
             this.msMahasiswa.Click += new System.EventHandler(this.msMahasiswa_Click);
             // 
@@ -106,18 +110,11 @@
             // 
             this.updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.msUpdateProdi,
-            this.msUpdateMahasiswa});
+            this.msUpdateMahasiswa,
+            this.msUDU});
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.updateToolStripMenuItem.Text = "&Update";
-            // 
-            // transaksiToolStripMenuItem
-            // 
-            this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.msDaftarUlangMahasiswa});
-            this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
-            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.transaksiToolStripMenuItem.Text = "&Transaksi";
             // 
             // msUpdateProdi
             // 
@@ -133,12 +130,42 @@
             this.msUpdateMahasiswa.Text = "Mahasiswa";
             this.msUpdateMahasiswa.Click += new System.EventHandler(this.msUpdateMahasiswa_Click);
             // 
+            // transaksiToolStripMenuItem
+            // 
+            this.transaksiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msDaftarUlangMahasiswa,
+            this.msLDU});
+            this.transaksiToolStripMenuItem.Name = "transaksiToolStripMenuItem";
+            this.transaksiToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.transaksiToolStripMenuItem.Text = "&Transaksi";
+            // 
             // msDaftarUlangMahasiswa
             // 
             this.msDaftarUlangMahasiswa.Name = "msDaftarUlangMahasiswa";
             this.msDaftarUlangMahasiswa.Size = new System.Drawing.Size(201, 22);
             this.msDaftarUlangMahasiswa.Text = "Daftar Ulang Mahasiswa";
             this.msDaftarUlangMahasiswa.Click += new System.EventHandler(this.msDaftarUlangMahasiswa_Click);
+            // 
+            // msViewDaftarUlang
+            // 
+            this.msViewDaftarUlang.Name = "msViewDaftarUlang";
+            this.msViewDaftarUlang.Size = new System.Drawing.Size(180, 22);
+            this.msViewDaftarUlang.Text = "Daftar Ulang";
+            this.msViewDaftarUlang.Click += new System.EventHandler(this.msViewDaftarUlang_Click);
+            // 
+            // msUDU
+            // 
+            this.msUDU.Name = "msUDU";
+            this.msUDU.Size = new System.Drawing.Size(180, 22);
+            this.msUDU.Text = "Daftar Ulang";
+            this.msUDU.Click += new System.EventHandler(this.msUDU_Click);
+            // 
+            // msLDU
+            // 
+            this.msLDU.Name = "msLDU";
+            this.msLDU.Size = new System.Drawing.Size(201, 22);
+            this.msLDU.Text = "Laporan Daftar Ulang ";
+            this.msLDU.Click += new System.EventHandler(this.msLDU_Click);
             // 
             // fHome
             // 
@@ -171,6 +198,9 @@
         private System.Windows.Forms.ToolStripMenuItem msUpdateProdi;
         private System.Windows.Forms.ToolStripMenuItem msUpdateMahasiswa;
         private System.Windows.Forms.ToolStripMenuItem msDaftarUlangMahasiswa;
+        private System.Windows.Forms.ToolStripMenuItem msViewDaftarUlang;
+        private System.Windows.Forms.ToolStripMenuItem msUDU;
+        private System.Windows.Forms.ToolStripMenuItem msLDU;
     }
 }
 

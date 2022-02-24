@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNPM = new System.Windows.Forms.TextBox();
             this.tbNamaMahasiswa = new System.Windows.Forms.TextBox();
             this.tbProdi = new System.Windows.Forms.TextBox();
             this.tbBiayaKuliah = new System.Windows.Forms.TextBox();
@@ -103,12 +103,14 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Biaya Kuliah";
             // 
-            // textBox1
+            // tbNPM
             // 
-            this.textBox1.Location = new System.Drawing.Point(212, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 20);
-            this.textBox1.TabIndex = 5;
+            this.tbNPM.Location = new System.Drawing.Point(212, 89);
+            this.tbNPM.Name = "tbNPM";
+            this.tbNPM.Size = new System.Drawing.Size(218, 20);
+            this.tbNPM.TabIndex = 5;
+            this.tbNPM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNPM_KeyPress);
+            this.tbNPM.Leave += new System.EventHandler(this.tbNPM_Leave);
             // 
             // tbNamaMahasiswa
             // 
@@ -153,6 +155,7 @@
             this.rbA.TabStop = true;
             this.rbA.Text = "A";
             this.rbA.UseVisualStyleBackColor = true;
+            this.rbA.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbA_MouseClick);
             // 
             // rbB
             // 
@@ -164,6 +167,7 @@
             this.rbB.TabStop = true;
             this.rbB.Text = "B";
             this.rbB.UseVisualStyleBackColor = true;
+            this.rbB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbB_MouseClick);
             // 
             // rbC
             // 
@@ -175,6 +179,7 @@
             this.rbC.TabStop = true;
             this.rbC.Text = "C";
             this.rbC.UseVisualStyleBackColor = true;
+            this.rbC.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbC_MouseClick);
             // 
             // label7
             // 
@@ -208,6 +213,7 @@
             this.tbPotonganBiayaKuliah.Name = "tbPotonganBiayaKuliah";
             this.tbPotonganBiayaKuliah.Size = new System.Drawing.Size(218, 20);
             this.tbPotonganBiayaKuliah.TabIndex = 16;
+            this.tbPotonganBiayaKuliah.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPotonganBiayaKuliah_KeyPress);
             // 
             // label10
             // 
@@ -280,6 +286,7 @@
             this.btnSubmit.TabIndex = 19;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnClear
             // 
@@ -289,6 +296,7 @@
             this.btnClear.TabIndex = 20;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // daftarUlang
             // 
@@ -315,7 +323,7 @@
             this.Controls.Add(this.tbBiayaKuliah);
             this.Controls.Add(this.tbProdi);
             this.Controls.Add(this.tbNamaMahasiswa);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNPM);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -335,7 +343,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNPM;
         private System.Windows.Forms.TextBox tbNamaMahasiswa;
         private System.Windows.Forms.TextBox tbProdi;
         private System.Windows.Forms.TextBox tbBiayaKuliah;

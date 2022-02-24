@@ -65,5 +65,26 @@ namespace UAS_OOP_1204055
             newUpdateMah.MdiParent = this;
             newUpdateMah.Show();
         }
+
+        private void msViewDaftarUlang_Click(object sender, EventArgs e)
+        {
+            View_Daftar_Ulang newViewDU = new View_Daftar_Ulang();
+            newViewDU.MdiParent = this;
+            newViewDU.Show();
+        }
+
+        private void msUDU_Click(object sender, EventArgs e)
+        {
+            Update_Daftar_Ulang newUDU = new Update_Daftar_Ulang();
+            newUDU.MdiParent = this;
+            newUDU.Show();        
+        }
+
+        private void msLDU_Click(object sender, EventArgs e)
+        {
+            Laporan_Daftar_Ulang newLDU = new Laporan_Daftar_Ulang();
+            newLDU.MdiParent = this;
+            newLDU.Show();
+        }
     }
 }

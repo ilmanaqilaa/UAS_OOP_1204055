@@ -138,6 +138,7 @@
             this.btClear.TabIndex = 12;
             this.btClear.Text = "Clear";
             this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // cbProdi
             // 
@@ -146,6 +147,7 @@
             this.cbProdi.Name = "cbProdi";
             this.cbProdi.Size = new System.Drawing.Size(181, 21);
             this.cbProdi.TabIndex = 13;
+            this.cbProdi.Text = "--Pilih Prodi--";
             // 
             // Mahasiswa
             // 

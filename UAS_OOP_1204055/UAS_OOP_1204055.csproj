@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Laporan Daftar Ulang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan Daftar Ulang.Designer.cs">
+      <DependentUpon>Laporan Daftar Ulang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ubah Data Mahasiswa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,17 +96,32 @@
     <Compile Include="Tampil Prodi.Designer.cs">
       <DependentUpon>Tampil Prodi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update Daftar Ulang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Daftar Ulang.Designer.cs">
+      <DependentUpon>Update Daftar Ulang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Prodi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Update Prodi.Designer.cs">
       <DependentUpon>Update Prodi.cs</DependentUpon>
     </Compile>
+    <Compile Include="View Daftar Ulang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Daftar Ulang.Designer.cs">
+      <DependentUpon>View Daftar Ulang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Daftar Ulang.resx">
       <DependentUpon>Daftar Ulang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Daftar Ulang.resx">
+      <DependentUpon>Laporan Daftar Ulang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ubah Data Mahasiswa.resx">
       <DependentUpon>Ubah Data Mahasiswa.cs</DependentUpon>
@@ -126,8 +147,14 @@
     <EmbeddedResource Include="Tampil Prodi.resx">
       <DependentUpon>Tampil Prodi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Update Daftar Ulang.resx">
+      <DependentUpon>Update Daftar Ulang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Update Prodi.resx">
       <DependentUpon>Update Prodi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Daftar Ulang.resx">
+      <DependentUpon>View Daftar Ulang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

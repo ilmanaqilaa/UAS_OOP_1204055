@@ -62,12 +62,41 @@ namespace UAS_OOP_1204055
 
         private void btSubmit_Click(object sender, EventArgs e)
         {
-            string myCmd = "INSERT INTO ms_mhs VALUES('"
-            + tbNPM.Text + "','"
-            + tbNamaMahasiswa.Text + "','"
-            + cbProdi.SelectedValue.ToString() + "')";
+            int valid = 0;
+            if (tbNPM.Text != "" && int.TryParse(tbNPM.Text.ToString(), out valid))
+            {
+                if (tbNamaMahasiswa.Text != "" && !tbNamaMahasiswa.Text.ToString().Any(char.IsDigit))
+                {
+                        string myCmd = "INSERT INTO ms_mhs VALUES('"
+                        + tbNPM.Text + "','"
+                        + tbNamaMahasiswa.Text + "','"
+                        + cbProdi.SelectedValue.ToString() + "')";
 
-            UpdateDB(myCmd);
+                         UpdateDB(myCmd);
+
+                        this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Nama wajib diisi dan tidak bisa memasukkan nomor", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("NPM hanya angka tidak bisa memasukkan text dan wajib diisi", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void clear()
+        {
+            tbNPM.Text = "";
+            tbNamaMahasiswa.Text = "";
+            cbProdi.Text = "";
+        }
+
+        private void btClear_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }

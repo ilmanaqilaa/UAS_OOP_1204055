@@ -105,6 +105,7 @@
             this.tbNamaProdi.Name = "tbNamaProdi";
             this.tbNamaProdi.Size = new System.Drawing.Size(187, 20);
             this.tbNamaProdi.TabIndex = 6;
+            this.tbNamaProdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNamaProdi_KeyPress);
             // 
             // tbSingkatan
             // 
@@ -112,6 +113,7 @@
             this.tbSingkatan.Name = "tbSingkatan";
             this.tbSingkatan.Size = new System.Drawing.Size(187, 20);
             this.tbSingkatan.TabIndex = 7;
+            this.tbSingkatan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSingkatan_KeyPress);
             // 
             // label6
             // 
@@ -175,6 +177,7 @@
             this.tbBiayaKuliah.Name = "tbBiayaKuliah";
             this.tbBiayaKuliah.Size = new System.Drawing.Size(187, 20);
             this.tbBiayaKuliah.TabIndex = 15;
+            this.tbBiayaKuliah.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBiayaKuliah_KeyPress);
             // 
             // programStudi
             // 
