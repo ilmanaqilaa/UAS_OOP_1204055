@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3198277e-f96e-4876-bfbc-246f8cce3a30": {
+      "ProjectGuid": "3198277e-f96e-4876-bfbc-246f8cce3a30",
+      "DisplayName": "UAS_OOP_1204055",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
